@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نادي إثراء الإعلامي | جامعة الأمير سطام</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">التقارير</a></li>
+                <li><a href="#">فريق العمل</a></li>
+                <li><a href="#">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>نادي إثراء الإعلامي</h1>
+            <p>تغطية مميزة لجميع الفعاليات والأنشطة الطلابية.</p>
+        </section>
+
+        <section class="about-us">
+            <h2>من نحن</h2>
+            <p>نادي إثراء الإعلامي هو أحد الأندية الطلابية بجامعة الأمير سطام بن عبدالعزيز ويعمل على تغطية كافة الفعاليات الأكاديمية والثقافية داخل وخارج الجامعة.</p>
+        </section>
+
+        <section class="reports">
+            <h2>أحدث التقارير</h2>
+            <ul>
+                <li><a href="#">تقرير الفعالية الأولى</a></li>
+                <li><a href="#">تقرير الفعالية الثانية</a></li>
+                <li><a href="#">تقرير الفعالية الثالثة</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 نادي إثراء الإعلامي. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
