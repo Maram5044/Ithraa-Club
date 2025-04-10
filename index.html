@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نادي إثراء الإعلامي - جامعة الأمير سطام بن عبدالعزيز</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- إضافة خطوط Cairo و Tajawal من Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- إضافة Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- بداية الهيدر -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="شعار نادي إثراء الإعلامي">
+                </a>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="main-menu" id="mainMenu">
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="about.html">عن النادي</a></li>
+                    <li><a href="activities.html">الأنشطة والفعاليات</a></li>
+                    <li><a href="gallery.html">معرض الوسائط</a></li>
+                    <li><a href="blog.html">المدونة الإعلامية</a></li>
+                    <li><a href="join.html">انضم إلينا</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <button class="search-toggle" id="searchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-form" id="searchForm">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="ابحث هنا...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- نهاية الهيدر -->
+
+    <!-- بداية المحتوى الرئيسي -->
+    <main>
+        <!-- قسم البانر الرئيسي -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>نادي إثراء الإعلامي</h1>
+                    <p>نافذتك الإعلامية على فعاليات وأنشطة جامعة الأمير سطام بن عبدالعزيز</p>
+                    <a href="join.html" class="btn btn-primary">انضم إلينا</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم نبذة عن النادي -->
+        <section class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>نبذة عن النادي</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>نادي إثراء الإعلامي هو أحد الأندية الطلابية التابعة لعمادة شؤون الطلاب بجامعة الأمير سطام بن عبدالعزيز. يقوم النادي بتغطية برامج وفعاليات عمادة شؤون الطلاب داخل الجامعة وخارجها بتقارير إعلامية مميزة ومتنوعة.</p>
+                        <a href="about.html" class="btn btn-secondary">اقرأ المزيد</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/about-club.jpg" alt="صورة نادي إثراء الإعلامي">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم أحدث الفعاليات -->
+        <section class="latest-activities">
+            <div class="container">
+                <div class="section-header">
+                    <h2>أحدث الفعاليات</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="activities-grid">
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="images/activity1.jpg" alt="فعالية 1">
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-date">15 مارس 2025</div>
+                            <h3>ورشة عمل التصوير الصحفي</h3>
+                            <p>ورشة عمل متخصصة في أساسيات التصوير الصحفي وتقنياته المختلفة.</p>
+                            <a href="#" class="read-more">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="images/activity2.jpg" alt="فعالية 2">
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-date">10 مارس 2025</div>
+                            <h3>تغطية فعاليات اليوم العالمي للغة العربية</h3>
+                            <p>تغطية شاملة لفعاليات اليوم العالمي للغة العربية التي نظمتها كلية الآداب.</p>
+                            <a href="#" class="read-more">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="images/activity3.jpg" alt="فعالية 3">
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-date">1 مارس 2025</div>
+                            <h3>دورة أساسيات الكتابة الصحفية</h3>
+                            <p>دورة تدريبية في أساسيات الكتابة الصحفية وإعداد التقارير الإعلامية.</p>
+                            <a href="#" class="read-more">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all">
+                    <a href="activities.html" class="btn btn-secondary">عرض جميع الفعاليات</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم معرض الصور -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>معرض الصور</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/gallery1.jpg" alt="صورة 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery2.jpg" alt="صورة 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery3.jpg" alt="صورة 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery4.jpg" alt="صورة 4">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery5.jpg" alt="صورة 5">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery6.jpg" alt="صورة 6">
+                    </div>
+                </div>
+                <div class="view-all">
+                    <a href="gallery.html" class="btn btn-secondary">عرض المزيد من الصور</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الانضمام للنادي -->
+        <section class="join-section">
+            <div class="container">
+                <div class="join-content">
+                    <h2>انضم إلى نادي إثراء الإعلامي</h2>
+                    <p>هل أنت مهتم بالمجال الإعلامي؟ هل ترغب في تطوير مهاراتك الإعلامية وتوثيق فعاليات الجامعة؟ انضم إلينا الآن!</p>
+                    <a href="join.html" class="btn btn-primary">سجل الآن</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- نهاية المحتوى الرئيسي -->
+
+    <!-- بداية الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="شعار نادي إثراء الإعلامي">
+                    <p>نادي إثراء الإعلامي - عمادة شؤون الطلاب<br>جامعة الأمير سطام بن عبدالعزيز</p>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">عن النادي</a></li>
+                        <li><a href="activities.html">الأنشطة والفعاليات</a></li>
+                        <li><a href="gallery.html">معرض الوسائط</a></li>
+                        <li><a href="blog.html">المدونة الإعلامية</a></li>
+                        <li><a href="join.html">انضم إلينا</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>تواصل معنا</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:ithraa.media@psau.edu.sa">ithraa.media@psau.edu.sa</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> عمادة شؤون الطلاب - جامعة الأمير سطام بن عبدالعزيز</li>
+                    </ul>
+                    <div class="social-media">
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; 2025 نادي إثراء الإعلامي - جامعة الأمير سطام بن عبدالعزيز</p>
+            </div>
+        </div>
+    </footer>
+    <!-- نهاية الفوتر -->
+
+    <!-- ملفات جافاسكريبت -->
+    <script src="js/main.js"></script>
+</body>
+</html>

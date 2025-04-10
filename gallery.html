@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الوسائط - نادي إثراء الإعلامي</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- إضافة خطوط Cairo و Tajawal من Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- إضافة Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- إضافة مكتبة Lightbox لعرض الصور -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <!-- بداية الهيدر -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="شعار نادي إثراء الإعلامي">
+                </a>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="main-menu" id="mainMenu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن النادي</a></li>
+                    <li><a href="activities.html">الأنشطة والفعاليات</a></li>
+                    <li><a href="gallery.html" class="active">معرض الوسائط</a></li>
+                    <li><a href="blog.html">المدونة الإعلامية</a></li>
+                    <li><a href="join.html">انضم إلينا</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <button class="search-toggle" id="searchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-form" id="searchForm">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="ابحث هنا...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- نهاية الهيدر -->
+
+    <!-- بداية المحتوى الرئيسي -->
+    <main>
+        <!-- عنوان الصفحة -->
+        <section class="page-header">
+            <div class="container">
+                <h1>معرض الوسائط</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">الرئيسية</a> / <span>معرض الوسائط</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم تصنيف المعرض -->
+        <section class="gallery-categories">
+            <div class="container">
+                <div class="categories-tabs">
+                    <button class="tab-btn active" data-tab="photos">الصور</button>
+                    <button class="tab-btn" data-tab="videos">الفيديوهات</button>
+                    <button class="tab-btn" data-tab="reports">التقارير المصورة</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم معرض الصور -->
+        <section class="gallery-section tab-content active" id="photos">
+            <div class="container">
+                <div class="section-header">
+                    <h2>معرض الصور</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">الكل</button>
+                    <button class="filter-btn" data-filter="events">فعاليات</button>
+                    <button class="filter-btn" data-filter="workshops">ورش عمل</button>
+                    <button class="filter-btn" data-filter="trips">رحلات</button>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="events">
+                        <a href="images/gallery1.jpg" data-lightbox="gallery" data-title="حفل تدشين النادي">
+                            <img src="images/gallery1.jpg" alt="حفل تدشين النادي">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>حفل تدشين النادي</h3>
+                                    <p>مارس 2025</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-item" data-category="workshops">
+                        <a href="images/gallery2.jpg" data-lightbox="gallery" data-title="ورشة عمل التصوير الصحفي">
+                            <img src="images/gallery2.jpg" alt="ورشة عمل التصوير الصحفي">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>ورشة عمل التصوير الصحفي</h3>
+                                    <p>فبراير 2025</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <a href="images/gallery3.jpg" data-lightbox="gallery" data-title="تغطية اليوم العالمي للغة العربية">
+                            <img src="images/gallery3.jpg" alt="تغطية اليوم العالمي للغة العربية">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>تغطية اليوم العالمي للغة العربية</h3>
+                                    <p>ديسمبر 2024</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-item" data-category="trips">
+                        <a href="images/gallery4.jpg" data-lightbox="gallery" data-title="زيارة مقر قناة الإخبارية">
+                            <img src="images/gallery4.jpg" alt="زيارة مقر قناة الإخبارية">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>زيارة مقر قناة الإخبارية</h3>
+                                    <p>نوفمبر 2024</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <a href="images/gallery5.jpg" data-lightbox="gallery" data-title="ملتقى الإبداع الطلابي">
+                            <img src="images/gallery5.jpg" alt="ملتقى الإبداع الطلابي">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>ملتقى الإبداع الطلابي</h3>
+                                    <p>أكتوبر 2024</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-item" data-category="workshops">
+                        <a href="images/gallery6.jpg" data-lightbox="gallery" data-title="ورشة عمل تصميم الإنفوجرافيك">
+                            <img src="images/gallery6.jpg" alt="ورشة عمل تصميم الإنفوجرافيك">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>ورشة عمل تصميم الإنفوجرافيك</h3>
+                                    <p>سبتمبر 2024</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <a href="images/gallery7.jpg" data-lightbox="gallery" data-title="اليوم الوطني السعودي">
+                            <img src="images/gallery7.jpg" alt="اليوم الوطني السعودي">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>اليوم الوطني السعودي</h3>
+                                    <p>سبتمبر 2024</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="gallery-item" data-category="trips">
+                        <a href="images/gallery8.jpg" data-lightbox="gallery" data-title="زيارة وكالة الأنباء السعودية">
+                            <img src="images/gallery8.jpg" alt="زيارة وكالة الأنباء السعودية">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>زيارة وكالة الأنباء السعودية</h3>
+                                    <p>أغسطس 2024</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#" class="next">التالي <i class="fas fa-chevron-left"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الفيديوهات -->
+        <section class="gallery-section tab-content" id="videos">
+            <div class="container">
+                <div class="section-header">
+                    <h2>الفيديوهات</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="videos-grid">
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="images/video1.jpg" alt="فيديو تغطية حفل التخرج">
+                            <a href="#" class="play-btn"><i class="fas fa-play"></i></a>
+                        </div>
+                        <div class="video-info">
+                            <h3>تغطية حفل تخرج الدفعة 15</h3>
+                            <p>مارس 2025</p>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="images/video2.jpg" alt="فيديو ورشة عمل التصوير">
+                            <a href="#" class="play-btn"><i class="fas fa-play"></i></a>
+                        </div>
+                        <div class="video-info">
+                            <h3>ورشة عمل التصوير الصحفي</h3>
+                            <p>فبراير 2025</p>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="images/video3.jpg" alt="فيديو اليوم العالمي للغة العربية">
+                            <a href="#" class="play-btn"><i class="fas fa-play"></i></a>
+                        </div>
+                        <div class="video-info">
+                            <h3>فعاليات اليوم العالمي للغة العربية</h3>
+                            <p>ديسمبر 2024</p>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="images/video4.jpg" alt="فيديو زيارة قناة الإخبارية">
+                            <a href="#" class="play-btn"><i class="fas fa-play"></i></a>
+                        </div>
+                        <div class="video-info">
+                            <h3>زيارة مقر قناة الإخبارية</h3>
+                            <p>نوفمبر 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#" class="next">التالي <i class="fas fa-chevron-left"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم التقارير المصورة -->
+        <section class="gallery-section tab-content" id="reports">
+            <div class="container">
+                <div class="section-header">
+                    <h2>التقارير المصورة</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="reports-grid">
+                    <div class="report-item">
+                        <div class="report-thumbnail">
+                            <img src="images/report1.jpg" alt="تقرير مصور عن حفل التخرج">
+                        </div>
+                        <div class="report-info">
+                            <h3>تقرير مصور: حفل تخرج الدفعة 15</h3>
+                            <p>تقرير مصور شامل عن فعاليات حفل تخرج الدفعة 15 من طلاب جامعة الأمير سطام بن عبدالعزيز.</p>
+                            <a href="#" class="btn btn-secondary">عرض التقرير</a>
+                        </div>
+                    </div>
+                    <div class="report-item">
+                        <div class="report-thumbnail">
+                            <img src="images/report2.jpg" alt="تقرير مصور عن اليوم الوطني">
+                        </div>
+                        <div class="report-info">
+                            <h3>تقرير مصور: احتفالات اليوم الوطني</h3>
+                            <p>تقرير مصور عن احتفالات الجامعة باليوم الوطني السعودي وأبرز الفعاليات المقامة بهذه المناسبة.</p>
+                            <a href="#" class="btn btn-secondary">عرض التقرير</a>
+                        </div>
+                    </div>
+                    <div class="report-item">
+                        <div class="report-thumbnail">
+                            <img src="images/report3.jpg" alt="تقرير مصور عن ملتقى الإبداع الطلابي">
+                        </div>
+                        <div class="report-info">
+                            <h3>تقرير مصور: ملتقى الإبداع الطلابي</h3>
+                            <p>تقرير مصور عن فعاليات ملتقى الإبداع الطلابي السنوي الذي نظمته عمادة شؤون الطلاب.</p>
+                            <a href="#" class="btn btn-secondary">عرض التقرير</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- نهاية المحتوى الرئيسي -->
+
+    <!-- بداية الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="شعار نادي إثراء الإعلامي">
+                    <p>نادي إثراء الإعلامي - عمادة شؤون الطلاب<br>جامعة الأمير سطام بن عبدالعزيز</p>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">عن النادي</a></li>
+                        <li><a href="activities.html">الأنشطة والفعاليات</a></li>
+                        <li><a href="gallery.html">معرض الوسائط</a></li>
+                        <li><a href="blog.html">المدونة الإعلامية</a></li>
+                        <li><a href="join.html">انضم إلينا</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>تواصل معنا</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:ithraa.media@psau.edu.sa">ithraa.media@psau.edu.sa</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> عمادة شؤون الطلاب - جامعة الأمير سطام بن عبدالعزيز</li>
+                    </ul>
+                    <div class="social-media">
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; 2025 نادي إثراء الإعلامي - جامعة الأمير سطام بن عبدالعزيز</p>
+            </div>
+        </div>
+    </footer>
+    <!-- نهاية الفوتر -->
+
+    <!-- ملفات جافاسكريبت -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

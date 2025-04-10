@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأنشطة والفعاليات - نادي إثراء الإعلامي</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- إضافة خطوط Cairo و Tajawal من Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- إضافة Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- بداية الهيدر -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="شعار نادي إثراء الإعلامي">
+                </a>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="main-menu" id="mainMenu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن النادي</a></li>
+                    <li><a href="activities.html" class="active">الأنشطة والفعاليات</a></li>
+                    <li><a href="gallery.html">معرض الوسائط</a></li>
+                    <li><a href="blog.html">المدونة الإعلامية</a></li>
+                    <li><a href="join.html">انضم إلينا</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <button class="search-toggle" id="searchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-form" id="searchForm">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="ابحث هنا...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- نهاية الهيدر -->
+
+    <!-- بداية المحتوى الرئيسي -->
+    <main>
+        <!-- عنوان الصفحة -->
+        <section class="page-header">
+            <div class="container">
+                <h1>الأنشطة والفعاليات</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">الرئيسية</a> / <span>الأنشطة والفعاليات</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الفعاليات القادمة -->
+        <section class="upcoming-activities">
+            <div class="container">
+                <div class="section-header">
+                    <h2>الفعاليات القادمة</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="upcoming-grid">
+                    <div class="upcoming-card">
+                        <div class="event-date">
+                            <div class="day">25</div>
+                            <div class="month">أبريل</div>
+                        </div>
+                        <div class="event-details">
+                            <h3>ورشة عمل: أساسيات المونتاج</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-clock"></i> 10:00 صباحاً - 2:00 مساءً</span>
+                                <span><i class="fas fa-map-marker-alt"></i> قاعة التدريب - عمادة شؤون الطلاب</span>
+                            </div>
+                            <p>ورشة عمل متخصصة في أساسيات المونتاج وتحرير الفيديو باستخدام برامج Adobe Premiere Pro.</p>
+                            <a href="#" class="btn btn-secondary">التفاصيل والتسجيل</a>
+                        </div>
+                    </div>
+                    <div class="upcoming-card">
+                        <div class="event-date">
+                            <div class="day">10</div>
+                            <div class="month">مايو</div>
+                        </div>
+                        <div class="event-details">
+                            <h3>دورة الإعلام الرقمي</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-clock"></i> 11:00 صباحاً - 1:00 مساءً</span>
+                                <span><i class="fas fa-map-marker-alt"></i> مسرح الجامعة الرئيسي</span>
+                            </div>
+                            <p>دورة تدريبية شاملة في مجال الإعلام الرقمي وإدارة المحتوى على منصات التواصل الاجتماعي.</p>
+                            <a href="#" class="btn btn-secondary">التفاصيل والتسجيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الفعاليات السابقة -->
+        <section class="past-activities">
+            <div class="container">
+                <div class="section-header">
+                    <h2>الفعاليات السابقة</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="activities-filter">
+                    <button class="filter-btn active" data-filter="all">الكل</button>
+                    <button class="filter-btn" data-filter="workshops">ورش عمل</button>
+                    <button class="filter-btn" data-filter="coverage">تغطيات إعلامية</button>
+                    <button class="filter-btn" data-filter="courses">دورات تدريبية</button>
+                </div>
+                <div class="activities-grid">
+                    <div class="activity-card" data-category="workshops">
+                        <div class="activity-image">
+                            <img src="images/activity1.jpg" alt="ورشة عمل التصوير الصحفي">
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-date">15 مارس 2025</div>
+                            <h3>ورشة عمل التصوير الصحفي</h3>
+                            <p>ورشة عمل متخصصة في أساسيات التصوير الصحفي وتقنياته المختلفة.</p>
+                            <a href="#" class="read-more">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                    <div class="activity-card" data-category="coverage">
+                        <div class="activity-image">
+                            <img src="images/activity2.jpg" alt="تغطية فعاليات اليوم العالمي للغة العربية">
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-date">10 مارس 2025</div>
+                            <h3>تغطية فعاليات اليوم العالمي للغة العربية</h3>
+                            <p>تغطية شاملة لفعاليات اليوم العالمي للغة العربية التي نظمتها كلية الآداب.</p>
+                            <a href="#" class="read-more">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                    <div class="activity-card" data-category="courses">
+                        <div class="activity-image">
+                            <img src="images/activity3.jpg" alt="دورة أساسيات الكتابة الصحفية">
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-date">1 مارس 2025</div>
+                            <h3>دورة أساسيات الكتابة الصحفية</h3>
+                            <p>دورة تدريبية في أساسيات الكتابة الصحفية وإعداد التقارير الإعلامية.</p>
+                            <a href="#" class="read-more">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                    <div class="activity-card" data-category="coverage">
+                        <div class="activity-image">
+                            <img src="images/activity4.jpg" alt="تغطية ملتقى الإبداع الطلابي">
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-date">20 فبراير 2025</div>
+                            <h3>تغطية ملتقى الإبداع الطلابي</h3>
+                            <p>تغطية إعلامية شاملة لملتقى الإبداع الطلابي السنوي الذي نظمته عمادة شؤون الطلاب.</p>
+                            <a href="#" class="read-more">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                    <div class="activity-card" data-category="workshops">
+                        <div class="activity-image">
+                            <img src="images/activity5.jpg" alt="ورشة عمل تصميم الإنفوجرافيك">
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-date">10 فبراير 2025</div>
+                            <h3>ورشة عمل تصميم الإنفوجرافيك</h3>
+                            <p>ورشة عمل متخصصة في تصميم الإنفوجرافيك وعرض البيانات بطريقة بصرية جذابة.</p>
+                            <a href="#" class="read-more">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                    <div class="activity-card" data-category="courses">
+                        <div class="activity-image">
+                            <img src="images/activity6.jpg" alt="دورة إدارة وسائل التواصل الاجتماعي">
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-date">1 فبراير 2025</div>
+                            <h3>دورة إدارة وسائل التواصل الاجتماعي</h3>
+                            <p>دورة تدريبية في إدارة حسابات وسائل التواصل الاجتماعي وتحسين التفاعل مع الجمهور.</p>
+                            <a href="#" class="read-more">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#" class="next">التالي <i class="fas fa-chevron-left"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- نهاية المحتوى الرئيسي -->
+
+    <!-- بداية الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="شعار نادي إثراء الإعلامي">
+                    <p>نادي إثراء الإعلامي - عمادة شؤون الطلاب<br>جامعة الأمير سطام بن عبدالعزيز</p>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">عن النادي</a></li>
+                        <li><a href="activities.html">الأنشطة والفعاليات</a></li>
+                        <li><a href="gallery.html">معرض الوسائط</a></li>
+                        <li><a href="blog.html">المدونة الإعلامية</a></li>
+                        <li><a href="join.html">انضم إلينا</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>تواصل معنا</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:ithraa.media@psau.edu.sa">ithraa.media@psau.edu.sa</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> عمادة شؤون الطلاب - جامعة الأمير سطام بن عبدالعزيز</li>
+                    </ul>
+                    <div class="social-media">
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; 2025 نادي إثراء الإعلامي - جامعة الأمير سطام بن عبدالعزيز</p>
+            </div>
+        </div>
+    </footer>
+    <!-- نهاية الفوتر -->
+
+    <!-- ملفات جافاسكريبت -->
+    <script src="js/main.js"></script>
+</body>
+</html>
